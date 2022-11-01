@@ -23,7 +23,7 @@ func TestUserRepository_FindByEmail(t *testing.T) {
 	defer teardown("users")
 
 	s := sqlstore.New(db)
-	email := "example@mail.ru"
+	email := "example@weqr.ru"
 	_, err := s.User().FindByEmail(email)
 	assert.EqualError(t, err, store.ErrRecordNotFound.Error())
 
